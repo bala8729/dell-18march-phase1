@@ -8,7 +8,8 @@ namespace DSA.Algorithms
         {
             //Stack stack = new Stack();
             //stack.Do();
-            BinarySearch.Do();
+            //BinarySearch.Do();
+            BubbleSort.Do();
         }
     }
 }
