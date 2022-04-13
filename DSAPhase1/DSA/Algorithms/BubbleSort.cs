@@ -8,7 +8,7 @@ namespace DSA.Algorithms
 {
     class BubbleSort
     {
-        static int[] array = { 12, 5, 45, 78, 3, 52, 1 };
+        static int[] array = { 43, 78, 21,3};
         
         public static void Do()
         {
@@ -22,15 +22,20 @@ namespace DSA.Algorithms
             Console.WriteLine("\n After sorting ");
             //iteration loo
             for (int i = 0; i < n - 1; i++)
-            {
+            {                
                 for (int j = 0; j < n-i-1; j++)
                 {
                     counter++;
                     if (array[j] > array[j + 1])
                     {
+                        Console.WriteLine("array[j] " + array[j]);
+                        Console.WriteLine("array[j+1] " + array[j+1]);                        
                         int temp = array[j];
+                        Console.WriteLine("Temp = array[j] " + temp);
                         array[j] = array[j + 1];
+                        Console.WriteLine("array[j] = array[j + 1]" + array[j]);
                         array[j + 1] = temp;
+                        Console.WriteLine("array[j+1] = temp " + array[j + 1]);
                     }
                 }
             }
